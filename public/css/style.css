@@ -15768,13 +15768,18 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+@font-face {
+  font-family: "yes";
+  src: url("../../public/fonts/Regular.ttf");
+}
+body {
+  font-family: yes;
+}
+
 #shopBanner {
   background-color: #f3f3f3;
 }
 
-#section2 #section2Div {
-  border: solid red;
-}
 #section2 #section2Div .img1 {
   border: white solid 2px;
   background-image: url("../../public/img/services/service-1.jpg");
