@@ -15805,7 +15805,7 @@ body {
   border-bottom: white solid 6px;
 }
 
-#shopBanner {
+#bilou {
   background-color: #f3f3f3;
 }
 
@@ -15852,6 +15852,30 @@ body {
   height: 90px;
   width: 100%;
   background-color: black;
+}
+
+.col35 {
+  display: none;
+}
+
+.col36 {
+  display: none;
+}
+
+.col37 {
+  display: none;
+}
+
+.col38 {
+  display: none;
+}
+
+.col39 {
+  display: none;
+}
+
+.col39 {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
