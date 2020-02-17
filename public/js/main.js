@@ -67,6 +67,7 @@ btnQuit.addEventListener("click", () => {
 
 btnInscription.addEventListener("click", () => {
     modale2.style.display = "block"
+    modale.style.display = "none"
 
 
 })
