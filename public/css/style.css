@@ -15776,6 +15776,24 @@ body {
   font-family: yes;
 }
 
+.modale {
+  height: 400px;
+  width: 800px;
+  background-color: green;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 0 250px black;
+}
+
+.modale2 {
+  height: 400px;
+  width: 800px;
+  background-color: green;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 0 250px black;
+}
+
 #shopBanner {
   background-color: #f3f3f3;
 }
