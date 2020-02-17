@@ -1,33 +1,31 @@
 
-let btnWhite =  document.getElementsByClassName("btnWhite")[0]
-let btnBlack = document.getElementsByClassName("btnBlack")[0]
-
 // body 
 
-let body =  document.querySelector("body")
+var body =  document.querySelector("body")
 
 // titre
-let titleEmporium = document.getElementsByClassName("title")[0] 
-let nav = document.getElementsByClassName("laNav")[0]
+var titleEmporium = document.getElementsByClassName("title")[0] 
+var nav = document.getElementsByClassName("laNav")[0]
 
 // image section 
-let image1Section3 = document.getElementsByClassName("img1")[0]
-let image2Section3 = document.getElementsByClassName("img2")[0]
-let image3Section3 = document.getElementsByClassName("img3")[0]
+var image1Section3 = document.getElementsByClassName("img1")[0]
+var image2Section3 = document.getElementsByClassName("img2")[0]
+var image3Section3 = document.getElementsByClassName("img3")[0]
 
-let modale = document.getElementsByClassName("modale")[0]
+var modale = document.getElementsByClassName("modale")[0]
 modale.style.display = "none"
-let modale2 = document.getElementsByClassName("modale2")[0]
+var modale2 = document.getElementsByClassName("modale2")[0]
 modale2.style.display = "none"
 
 
 
-let btnConnexion =  document.getElementsByClassName("btnConnexion")[0]
-let btnQuit = document.getElementsByClassName("quit")[0]
+var btnConnexion =  document.getElementsByClassName("btnConnexion")[0]
+var btnQuit = document.getElementsByClassName("quit")[0]
+var btnEnter = document.getElementsByClassName("btnEnter")[0]
 
-let btnInscription = document.getElementsByClassName("btnInscription")[0]
+var btnInscription = document.getElementsByClassName("btnInscription")[0]
 
-btnWhite.addEventListener("click", () => {
+document.getElementsByClassName("btnWhite")[0].addEventListener("click", () => {
     body.style.backgroundColor = "black"
     nav.setAttribute("class", " navbar navbar-expand-lg navbar-dark bg-dark")
     body.style.color = "white"
@@ -42,7 +40,7 @@ btnWhite.addEventListener("click", () => {
     
 })
 
-btnBlack.addEventListener("click", () => {
+document.getElementsByClassName("btnBlack")[0].addEventListener("click", () => {
     body.style.backgroundColor = "white"
     titleEmporium.setAttribute("class", "text-dark")
     nav.removeAttribute("class", "navbar-light bg-white")
@@ -72,5 +70,23 @@ btnInscription.addEventListener("click", () => {
 
 
 })
+
+btnEnter.addEventListener("click", () => {
+    modale2.style.display = "none"
+    modale.style.display = "block"
+
+
+})
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 70) {
+        nav.classList.add("fixed-top")
+        
+    }else if (window.scrollY < 70) {
+        nav.classList.remove("fixed-top")
+        
+    }
+})
+
 
 
