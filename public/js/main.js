@@ -97,7 +97,7 @@ var carousel = document.querySelectorAll("div.col-3")
 carouselBtn[2].addEventListener("click", () => {
     for (let i = 0; i < 10; i++) {
         carousel[i].style.display = "block"
-        if (i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 ) {
+        if (i == 4 || i == 5 || i == 6 || i == 7 || i == 8 ) {
             carousel[i].style.display = "none"
             
         }
@@ -108,7 +108,7 @@ carouselBtn[2].addEventListener("click", () => {
 carouselBtn[1].addEventListener("click", () => {
     for (let i = 0; i < 10; i++) {
         carousel[i].style.display = "block"
-        if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5  ) {
+        if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4  ) {
             carousel[i].style.display = "none"
             
         }
@@ -119,7 +119,7 @@ carouselBtn[1].addEventListener("click", () => {
 carouselBtn[0].addEventListener("click", () => {
     for (let i = 0; i < 10; i++) {
         carousel[i].style.display = "block"
-        if (i == 0 || i == 1 || i == 2 || i == 3 || i == 7 || i == 8 || i == 9  ) {
+        if (i == 0 || i == 1 || i == 2 || i == 3 || i == 7  ) {
             carousel[i].style.display = "none"
             
         }
